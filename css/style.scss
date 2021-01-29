@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 500px;
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+   
+   
+  
+    .carousel {
+        display: flex;
+        transition: transform ease 1s;
+        
+
+        
+    }
+
+    .circle-container {
+        display: flex;
+        position: absolute;
+        z-index:10;
+        top: 620px;
+        left: 200px;
+
+       
+        .circle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid black;
+            border-radius: 50%;
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+            &:hover {
+                background: black;
+                cursor: pointer;
+                transition: 1s;
+            }
+        }
+        
+    }
+
+    .manuel-circle-container {
+        display: flex;
+        position: absolute;
+        z-index:10;
+        top: 620px;
+        left: 200px;
+
+        .manuel-circle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid black;
+            border-radius: 50%;
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+            &:hover {
+                background: black;
+                cursor: pointer;
+                transition: 1s;
+            }
+        }
+    }
+}
+
